@@ -1,7 +1,7 @@
 {
 	"name": "test-Print",
 	"type": "flogo:activity",
-	"ref": "github.com/nitinsoni07/testPrint",
+	"ref": "github.com/sheetalbablani/testPrint",
 	"version": "0.0.1",
 	"title": "Test Print",
 	"description": "Test Print",
