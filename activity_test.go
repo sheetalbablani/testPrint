@@ -3,7 +3,6 @@ package testPrint
 import (
 	"fmt"
 	"io/ioutil"
-	"strings"
 	"testing"
 
 	"github.com/TIBCOSoftware/flogo-contrib/action/flow/test"
@@ -47,8 +46,7 @@ func TestListFiles(t *testing.T) {
 	//setup attrs
 
 	tc.SetInput("message", message)
-	//	fmt.Println(strings.Join([]string{host, strconv.Itoa(21)}, ":"))
-	//eval
+
 	act.Eval(tc)
 	val := tc.GetOutput("result")
 
