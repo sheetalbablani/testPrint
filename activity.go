@@ -11,11 +11,11 @@ import (
 var log = logger.GetLogger("activity-Print")
 
 const (
-	Disp     = "Message"
+	Disp     = "message"
 	ovResult = "result"
 )
 
-// inputs : {Message}
+// inputs : {message}
 // outputs: {result}
 type PrintActivity struct {
 	metadata *activity.Metadata
@@ -33,10 +33,12 @@ func (a *PrintActivity) Metadata() *activity.Metadata {
 
 func (a *PrintActivity) Eval(context activity.Context) (done bool, err error) {
 
-	Message := context.GetInput(Disp).(string)
-	fmt.Println("Hey beautiful ", Message)
+	message := context.GetInput(Disp).(string)
+	fmt.Println("Hey beautiful ", message)
 
-	context.SetOutput(ovResult, nil)
+	var strs = message
+
+	context.SetOutput(ovResult, strs)
 	return true, nil
 
 }
