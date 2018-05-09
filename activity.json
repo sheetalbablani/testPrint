@@ -1,0 +1,22 @@
+{
+	"name": "test-Print",
+	"type": "flogo:activity",
+	"ref": "github.com/nitinsoni07/testPrint",
+	"version": "0.0.1",
+	"title": "Test Print",
+	"description": "Test Print",
+	"homepage": "https://github.com/nitinsoni07/testPrint",
+	"input": [
+		{
+			"name": "Message",
+			"type": "string",
+			"required": true
+		}
+	],
+	"output": [
+		{
+			"name": "result",
+			"type": "string"
+		}
+	]
+}
